@@ -1,14 +1,14 @@
 document.querySelectorAll('.toggle').forEach(toggle => {
-    const title = toggle.closest('.project-title');
-    const display = title.nextElementSibling;
-    display.style.display = 'none';
+    const project = toggle.closest('.project');
     toggle.addEventListener('click', () => {
-        if (display.style.display === 'block') {
-            display.style.display = 'none';
-            toggle.textContent = '▼';
+        if (project.classList.contains('expanded')) {
+            project.classList.remove('expanded');
+            project.classList.add('collapsed');
+            
         } else {
-            display.style.display = 'block';
-            toggle.textContent = '▲';
+            project.classList.remove('collapsed');
+            project.classList.add('expanded');
+            
         }
     });
 });

@@ -23,6 +23,25 @@ article {
     flex-direction: row-reverse;
 }
 
+.project.collapsed .project-description {
+    display: none;
+}
+
+.project.collapsed .toggle::before {
+    content: "▼";
+}
+
+.project.expanded .toggle::before {
+    content: "▲";
+}
+
+
+.project.expanded .project-description {
+    display: block;
+}
+
+
+
 .background {
 position: fixed;
 filter: hue-rotate( 90deg ) blur( 0.1rem );
@@ -354,13 +373,13 @@ footer
 }
 
 /* invert colors for closed panel */
-.project:has( div[style="display: none;"] )
+.project.collapsed
 {
     background: #4ade80;
     color: #272727;
 }
 
-.project:has( div[style="display: none;"] ) a
+.project.collapsed a
 {
     color: #272727;
 }

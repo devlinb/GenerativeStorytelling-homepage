@@ -57,34 +57,34 @@
         </header>
         
         <main class="">
-            <div class="project">
+            <div class="project collapsed">
                 <div class="project-title">
                     <span><a href="/drama/">Arcadia</a><span class="links"><a href="https://www.generativestorytelling.ai/drama/" class="demo">demo</a> <a href="https://github.com/devlinb/arcadia" class="source">source</a></span></span>
-                    <span class="toggle">▼</span>
+                    <span class="toggle">&nbsp;</span>
                 </div>
-                <div style="display: none;">
+                <div class="project-description">
                     <p>An AI-powered experiment in story telling that throws you into a Game Of Thrones-esque world filled with political intrigue, backstabbing, and violence, as a family fights to the death to be next in line for the throne.
                     </p>
                     <p>This was written before GPT tool calls and JSON support even existed, so I first taught GPT a custom DSL, and then I wrote a parser for that DSL. This ended up saving a lot of context tokens compared to JSON, and it also allowed GPT to extend the DSL in some cool and creative ways on its own!
                     </p></div>
                 </div>
                 
-                <div class="project">
+                <div class="project collapsed">
                     <div class="project-title">
                         <span><a href="/escaperoom/">LLM Escape Room Helper</a><span class="links"><a href="https://www.generativestorytelling.ai/escaperoom/" class="demo">demo</a> <a href="https://github.com/devlinb/escaperoom/" class="source">source</a></span></span>
-                        <span class="toggle">▼</span>
+                        <span class="toggle">&nbsp;</span>
                     </div>
-                    <div style="display: none;">
+                    <div class="project-description">
                         <p>LLM Escape Room Helper generates REST tool/action endpoints to help create LLM powered escape room experiences. By hiding context from the LLM until it is needed, users cannot prompt engineer their way to a solution. It also provides endpoints for checking if a puzzle solution is correct. There is a hosted version at this site you can use, or you can deploy your own from the GitHub source. The only dependencies are Node and a local instance of Redis.</p>
                     </div>
                 </div>
                 
-                <div class="project">
+                <div class="project collapsed">
                     <div class="project-title">
                         <span><a href="https://github.com/devlinb/AgentTimer">AI Agent Timer</a><span class="links"><a href="https://github.com/devlinb/AgentTimer" class="source">source</a></span></span>
-                        <span class="toggle">▼</span>
+                        <span class="toggle">&nbsp;</span>
                     </div>
-                    <div style="display: none;">
+                    <div class="project-description">
                         <p>Many AI Agent platforms don't have the concept of how long they have been interacting with a user within a given session. AgentTimer solves this by creating a toolcall endpoint that LLMs can request the current conversation duration from. It is pretty bare bones right now, it only returns the current conversation in seconds. You need to provide your own unique ID for conversations, though eventually I'll get around to adding a second endpoint that can also generate IDs.</p>
                     </div>
                 </div>
