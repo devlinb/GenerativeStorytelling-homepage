@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'AnkaCoderNarrowRegular';
+        src: url('/fonts/AnkaCoderNarrowRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DancingScriptRegular';
+        src: url('/fonts/DancingScriptRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
