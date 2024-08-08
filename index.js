@@ -127,7 +127,7 @@ function typewriter(options) {
 }
 
 function startRandomArticleFade() {
-    let article_id = `article_${Math.floor((Math.random() * 10) + 1)}`;
+    let article_id = `article_${Math.floor((Math.random() * 11) + 1)}`;
     if (runningAnimations[article_id]) return;
     runningAnimations[article_id] = true;
     typewriter({id: article_id, setVisibleOnPrimaryElement: true, timeBasedOnLength: true, onAnimationFinished: () => {runningAnimations[article_id] = false}});

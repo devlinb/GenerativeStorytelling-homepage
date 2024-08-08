@@ -25,7 +25,7 @@ article {
 
 .background {
 position: fixed;
-filter: hue-rotate( 90deg ) blur( 0.5rem );
+filter: hue-rotate( 90deg ) blur( 0.1rem );
 /*filter: blur( 0.25rem ) saturate(2) blur(0.5rem) saturate(0.5);*/
 }
 
